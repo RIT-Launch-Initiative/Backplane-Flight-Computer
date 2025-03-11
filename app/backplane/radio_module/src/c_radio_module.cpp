@@ -25,6 +25,7 @@ void CRadioModule::AddTenantsToTasks() {
     // Networking
     networkingTask.AddTenant(sensorModuleListenerTenant);
     networkingTask.AddTenant(powerModuleListenerTenant);
+    networkingTask.AddTenant(tftpServerTenant);
 
 #ifndef CONFIG_ARCH_POSIX
     // LoRa
